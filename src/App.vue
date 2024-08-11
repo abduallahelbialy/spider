@@ -1,5 +1,5 @@
 <template>
-  <Nav/>
+  <Navbar/>
 
   <RouterView />
   <Footer/>
@@ -7,11 +7,11 @@
 
 <script>
 import  {RouterView}  from 'vue-router';
-import Nav from "../src/components/layout/Nav.vue"
+import Navbar from "../src/components/layout/Navbar.vue"
 import Footer from "../src/components/layout/Footer.vue"
 export default {
   name:"App",
-components:{RouterView,Nav,Footer}
+components:{RouterView,Navbar,Footer}
 
 }
 </script>

@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import home from "../views/Home.vue"
+import home from "../components/layout/Nav.vue"
 import Service from "../views/Service.vue";
+import Storew from "../views/Storeapp.vue";
 import Slider from "../views/Slider.vue";
 import About from "../views/About.vue";
 import Works from "../views/Works.vue";
@@ -33,7 +34,12 @@ const router = createRouter({
       name: "Works",
       component: Works,
     },
-    
+    {
+      path: "/store",
+      name: "store",
+      component: Storew,
+    },
+
     {
       path: "/:cathAll(.*)",
       name: "ErrorPage",
