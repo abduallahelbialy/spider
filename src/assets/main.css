@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'myfont';
+  src: url('../assets/somar-sans/SomarSans-Black.otf') format('truetype'),
+   url('../assets/Scheherazade_New/Cairo-Medium.ttf') format('truetype'),
+   url('../assets/Scheherazade_New/Cairo-Light.ttf') format('truetype'),
+   url('../assets/Scheherazade_New/Cairo-SemiBold.ttf') format('truetype');
+  font-weight: 500; 
+  font-style: normal;
+}
+:root{
+  --main-color:#25006c;
+  --red-color:#e81212;
+}
+body {
+  font-family: "myfont", serif !important;
+  font-weight: 500 ;
+  cursor: pointer; 
+}
+::selection{
+  background-color: #e81212;
+}
+@media (max-width:477px) {
+  .navbar-nav {
+    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: var(--bs-navbar-color);
+    --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+    --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    flex-direction: column-reverse !important;
+    align-items: center;
+}
+}
+.p-rating {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px !important;
+}
+
