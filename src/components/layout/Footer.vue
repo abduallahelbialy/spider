@@ -216,7 +216,7 @@ li {
   outline: none;
 }
 .sub input {
-  width: 300px;
+  width: 254px;
   padding: 14px;
   border-radius: 4px;
   outline: none;
@@ -242,7 +242,7 @@ li {
   }
   .sub .btn {
     position: absolute;
-    left: 33px;
+    left: 52px;
     top: 6px;
     background-color: var(--red-color);
   }
