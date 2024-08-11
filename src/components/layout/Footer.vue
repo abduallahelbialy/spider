@@ -260,4 +260,11 @@ li {
     margin: inherit;
   }
 }
+@media (max-width: 992px) {
+  .phone {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: inherit;
+  }
+}
 </style>
