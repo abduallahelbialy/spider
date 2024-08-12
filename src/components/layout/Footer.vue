@@ -251,7 +251,7 @@ li {
   }
   .sub .btn {
     position: absolute;
-    left: 54px;
+    left: 54px !important;
     top: 6px;
     background-color: var(--red-color);
   }
