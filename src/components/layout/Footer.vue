@@ -20,7 +20,7 @@
                   <i class="pi pi-chevron-circle-left"></i>
                 </li>
                 <li class="d-flex gap-2 align-items-center text-end">
-                  {{ $t("message.address2") }}
+                  {{ $t("message.addresst") }}
                  <i
                     class="pi pi-chevron-circle-left"
                   ></i>
