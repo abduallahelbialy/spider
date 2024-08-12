@@ -84,7 +84,7 @@
               </div>
               <div class="text-logo text-end mt-3 pt-3">
                 <p>
-                {{ $te("message.apps") }}
+                {{ $t("message.apps") }}
                 </p>
               </div>
               <div class="notfa d-flex justify-content-end gap-1">
