@@ -11,14 +11,14 @@
                 :key="one.id"
               >
                 <img :src="one.img" alt="" />
-                <span>{{ one.text }}</span>
+                <span>{{$t( one.text) }}</span>
               </div>
             </div>
             <div class="icons mt-2 d-flex justify-content-around flex-wrap gap-3">
               <div class="d-flex flex-column align-items-center gap-3 info"  v-for="one in onestwo"
                 :key="one.id">
                 <img :src="one.img" alt="" />
-                <span>{{ one.text }}</span>
+                <span>{{$t( one.text) }}</span>
               </div>
              
               
@@ -26,16 +26,15 @@
           </div>
           <div class="col-lg-6">
             <div class="text-op d-flex flex-column align-items-end">
-              <p class="">القطاعات التى تم العمل بها</p>
-              <h1>هل لديك قطاع خاص؟</h1>
+              <p class="">{{ $t("message.opp") }}</p>
+              <h1>{{ $t("message.privateSector") }}</h1>
 
               <span>
-                تواصل معنا في حالة إذا كنت تعمل فى قطاع ما وترغب في ابتكار حل
-                يساعدك علي مواكبة التحول الرقمي وبناء أفضل الأنظمة الذكية.
+                {{ $t("message.contactUs") }}
               </span>
 
               <div class="requst mb-3 mt-3">
-                <button class="btn">اطلب خدمة الان</button>
+                <button class="btn"> {{ $t("message.requestService") }}</button>
               </div>
             </div>
           </div>
@@ -57,14 +56,14 @@ export default {
   data() {
     return {
       ones: [
-        { id: 1, text: "القطاع العقاري", img: img1 },
-        { id: 2, text: "القطاع التجاري", img: img2 },
-        { id: 3, text: "القطاع الاستثماري", img: img3 },
+        { id: 1, text: "oppts.1", img: img1 },
+        { id: 2, text: "oppts.2", img: img2 },
+        { id: 3, text: "oppts.3", img: img3 },
       ],
       onestwo: [
-        { id: 1, text: "القطاع التعليمي", img: img4 },
-        { id: 2, text: "قطاع التسويق", img: img5 },
-        { id: 3, text: "القطاع الطبي", img: img6 },
+        { id: 1, text: "oppts.4", img: img4 },
+        { id: 2, text: "oppts.5", img: img5 },
+        { id: 3, text: "oppts.6", img: img6 },
       ],
     };
   },
@@ -118,7 +117,7 @@ export default {
   background-color: transparent;
   text-decoration: none;
   overflow: hidden;
-  width: 130px;
+  width: 182px;
   padding: 9px;
   border-radius: 6px;
   z-index: 1;

@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="title text-center mb-3">
-          <h1>موثوق به من قبل أكثر من 100 شركة ناشئة وعمل مستقل</h1>
+          <h1>{{ $t("message.more") }}</h1>
         </div>
         <div class="test-sli mt-5">
           <swiper
@@ -24,7 +24,7 @@
         </div>
         <div class="say pt-5 mt-5">
           <div class="title text-center mb-3">
-            <h1>ماذا يقول عملاؤنا عنا</h1>
+            <h1>{{ $t("message.say") }}</h1>
           </div>
           <swiper
             :slidesPerView="slidesPerView"
@@ -51,15 +51,15 @@
                     <Rating v-model="value" :stars="5" />
                   </div>
                   <p class="text-end">
-                   {{ cli.par }}
+                   {{$t(cli.par)  }}
                   </p>
                 </div>
                 <div
                   class="client d-flex gap-2 justify-content-end mt-3 align-items-center"
                 >
                   <div class="text-client d-flex flex-column align-items-end">
-                    <h1>{{ cli.text }}</h1>
-                    <p>{{ cli.des }}</p>
+                    <h1>{{$t(cli.text)  }}</h1>
+                    <p>{{$t(cli.des)  }}</p>
                   </div>
                   <div class="img-client">
                     <img :src="cli.imgd" alt="" />
@@ -103,30 +103,30 @@ export default {
         {
           id: 1,
           imgd: imgc1,
-          par: "التجربة لا تزال في بدايتها ونأمل أن تكون مذهلة وتكلل بالنجاح للطرفين. الفريق لطيفًا ومتعاونًا للغاية",
-          text: "م/مهندس عبدالله البيلى",
-          des: "مستشار دولي في الابتكار واستشراف المستقبل",
+          par: "says.1",
+          text: "says.2",
+          des: "says.3",
         },
         {
           id: 2,
           imgd: imgc1,
-          par: "التجربة لا تزال في بدايتها ونأمل أن تكون مذهلة وتكلل بالنجاح للطرفين. الفريق لطيفًا ومتعاونًا للغاية",
-          text: "م/مهندس عبدالله البيلى",
-          des: "مستشار دولي في الابتكار واستشراف المستقبل",
+         par: "says.1",
+          text: "says.2",
+          des: "says.3",
         },
         {
           id: 3,
           imgd: imgc1,
-          par: "التجربة لا تزال في بدايتها ونأمل أن تكون مذهلة وتكلل بالنجاح للطرفين. الفريق لطيفًا ومتعاونًا للغاية",
-          text: "م/مهندس عبدالله البيلى",
-          des: "مستشار دولي في الابتكار واستشراف المستقبل",
+         par: "says.1",
+          text: "says.2",
+          des: "says.3",
         },
         {
           id: 4,
           imgd: imgc1,
-          par: "التجربة لا تزال في بدايتها ونأمل أن تكون مذهلة وتكلل بالنجاح للطرفين. الفريق لطيفًا ومتعاونًا للغاية",
-          text: "م/مهندس عبدالله البيلى",
-          des: "مستشار دولي في الابتكار واستشراف المستقبل",
+          par: "says.1",
+          text: "says.2",
+          des: "says.3",
         },
       ],
       imgs: [

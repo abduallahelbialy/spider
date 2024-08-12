@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="title text-center">
-          <h1>مجلس إدارة سبايدر تك</h1>
+          <h1>{{ $t("message.Directors") }}</h1>
         </div>
         <div class="d-flex justify-content-center">
          <swiper

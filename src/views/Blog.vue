@@ -3,8 +3,8 @@
     <div class="container">
       <div class="row">
         <div class="title text-center mb-3">
-          <h1>المدونة</h1>
-          <h2>تصميم مشروعك من شركة سبايدر-تك سيكون مختلفاً</h2>
+          <h1>{{$t("message.blog")}}</h1>
+          <h2>{{ $t("message.desigs") }}</h2>
         </div>
         <div class="d-flex justify-content-evenly align-items-center flex-wrap">
           <swiper
@@ -24,16 +24,16 @@
                 <div
                   class="text-card d-flex justify-content-end flex-column align-items-end"
                 >
-                  <h1>{{ slider.text }}</h1>
-                  <h2>{{ slider.title }}</h2>
+                  <h1>{{$t(slider.text)  }}</h1>
+                  <h2>{{$t(slider.title)  }}</h2>
                   <p class="text-end">
-                    {{ slider.par }}
+                    {{$t(slider.par)  }}
                   </p>
                 </div>
                 <div class="d-flex justify-content-end gap-2 p-2">
                   <div class="text-icon d-flex flex-column align-items-end">
-                    <p>{{ slider.by }}</p>
-                    <span>{{ slider.date }}</span>
+                    <p>{{ $t(slider.by) }}</p>
+                    <span>{{$t(slider.date)  }}</span>
                   </div>
                   <div class="img-icon">
                     <img :src="slider.icon" alt="" />
@@ -44,7 +44,7 @@
           </swiper>
         </div>
         <div class="requst mb-3 mt-4 text-center">
-          <button class="btn">كل المقالات</button>
+          <button class="btn">{{ $t("message.Articles") }}</button>
         </div>
       </div>
     </div>
@@ -78,41 +78,41 @@ export default {
           id: 1,
           img: img1,
           icon: imgo,
-          text: "تجربة المستخدم",
-          par: " تُركّز تجربة المستخدم (UX) على فهم عميق للمستخدمين، وما يحتاجون إليه، وما يُقدّرونه، وقُدراتهم وأيضاً حدودهم.",
-          title: "ما هى تجربة المستخدم ؟",
-          date: "11-8-2024",
-          by: "نشر بواسطة: سبايدر-تك",
+          text: "blogs.1",
+          par:"blogs.2",
+          title: "blogs.3",
+          date: "blogs.4",
+          by: "blogs.5",
         },
         {
           id: 2,
           img: img2,
           icon: imgo,
-          text: "تحسين محركات البحث",
-          par: "هي عملية تطوير مواقع الويب لتناسب متطلبات محركات البحث المختلفة مثل Google أو Bing بهدف الظهور في نتائج البحث الأولى .",
-          title: "ما هو السيو وما هي فائدته لموقعك ؟",
-          date: "11-8-2024",
-          by: "نشر بواسطة: سبايدر-تك",
+          text: "blogs.6",
+          par: "blogs.7",
+          title: "blogs.8",
+          date: "blogs.4",
+          by: "blogs.5",
         },
         {
           id: 3,
           img: img3,
           icon: imgo,
-          text: " تحليل الأعمال",
-          par: "تحليل الأعمال هو عملية تحديد احتياجات العمل، والمشاكل، والفرص، ومن ثم تحديد الحلول لمعالجة تلك القضايا.",
-          title: "مفهوم تحليل الأعمال",
-          date: "11-8-2024",
-          by: "نشر بواسطة: سبايدر-تك",
+          text: "blogs.9",
+          par: "blogs.10",
+          title: "blogs.11",
+         date: "blogs.4",
+          by: "blogs.5",
         },
         {
           id: 4,
           img: img4,
           icon: imgo,
-          text: "واجهة برمجة التطبيقات",
-          par: "هو عبارة عن تقنية تسمح للتطبيقات بالوصول إلى البيانات والتفاعل مع مكونات البرامج الخارجية أو أنظمة التشغيل أو الوظائف المصغرة.",
-          title: "ما هى واجهة برمجة التطبيقات ؟",
-          date: "11-8-2024",
-          by: "نشر بواسطة: سبايدر-تك",
+          text: "blogs.12",
+          par: "blogs.13",
+          title: "blogs.14",
+         date: "blogs.4",
+          by: "blogs.5",
         },
       ],
     };

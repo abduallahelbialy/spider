@@ -9,14 +9,14 @@
             <img src="../assets/store.png" alt="">
           </div>
           <div class="text-box d-flex justify-content-end flex-column  align-items-end">
-            <h1 class=" text-end">قم بانشاء متجرك الالكتروني الخاص في<br/> 15 يوم</h1>
+            <h1 class=" text-end" v-html="$t('message.story')"></h1>
             <ul class=" d-flex justify-content-end flex-column  align-items-end">
-              <p class=" fw-semibold">مميزات الربط و التكامل احصل على 2 من 3  </p>
-              <li class="d-flex gap-2 align-items-center">شركات الشحن <img src="../assets/st1.png" alt=""></li>
-              <li class="d-flex gap-2 align-items-center"> الدفع الالكتروني <img src="../assets/st2.png" alt=""></li>
-              <li class="d-flex gap-2 align-items-center">  خدمات الرسائل النصية <img src="../assets/st3.png" alt=""></li>
+              <p class=" fw-semibold">{{ $t("message.Features") }}</p>
+              <li class="d-flex gap-2 align-items-center">{{ $t("message.company") }}<img src="../assets/st1.png" alt=""></li>
+              <li class="d-flex gap-2 align-items-center">{{ $t("message.pay") }} <img src="../assets/st2.png" alt=""></li>
+              <li class="d-flex gap-2 align-items-center">  {{ $t("message.serving") }}<img src="../assets/st3.png" alt=""></li>
               <div class="requst mb-3 mt-3 text-end">
-              <button class="btn">اطلب خدمة الان</button>
+              <button class="btn">{{ $t("message.requestService") }}</button>
             </div>
             </ul>
           </div>
@@ -72,7 +72,7 @@ li img{
   background-color: transparent;
   text-decoration: none;
   overflow: hidden;
-  width: 130px;
+  width: 180px;
   padding: 9px;
   border-radius: 6px;
   z-index: 1;

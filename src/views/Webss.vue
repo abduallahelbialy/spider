@@ -3,8 +3,8 @@
     <div class="container">
       <div class="row">
         <div class="title text-center mb-3">
-          <h1>المشاريع الجاهزة</h1>
-          <h2>سننشئ لك موقعًا على شبكة الإنترنت يلبي جميع متطلباتك وأكثر.</h2>
+          <h1>{{ $t("message.aproj") }}</h1>
+          <h2>{{ $t("message.website") }}</h2>
         </div>
         <swiper
           :slidesPerView="slidesPerView"

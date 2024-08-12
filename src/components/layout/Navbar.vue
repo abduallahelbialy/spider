@@ -236,4 +236,34 @@ data() {
   display: block !important;
 }
 }
+@media (max-width: 799px) {
+  
+  .phoa{
+  display: block;
+}
+.pcab{
+  display: none;
+}
+.barntwo{
+  display: none;
+}
+.pcabs{
+  display: block !important;
+}
+}
+@media (max-width: 992px) {
+  
+  .phoa{
+  display: block;
+}
+.pcab{
+  display: none;
+}
+.barntwo{
+  display: none;
+}
+.pcabs{
+  display: block !important;
+}
+}
 </style>

@@ -15,11 +15,11 @@
                     <img :src="box.img" alt="" />
                   </div>
                   <div class="tit mt-3">
-                    <p>{{ box.text }}</p>
+                    <p>{{ $t(box.text) }}</p>
                   </div>
                   <div class="tit2 text-center">
                     <p>
-                      {{ box.des }}
+                      {{ $t(box.des) }}
                     </p>
                   </div>
                 </div>
@@ -34,11 +34,11 @@
                     <img :src="box.imgtw" alt="" />
                   </div>
                   <div class="tit mt-3">
-                    <p>{{ box.text2 }}</p>
+                    <p>{{ $t(box.text2) }}</p>
                   </div>
                   <div class="tit2 text-center">
                     <p>
-                      {{ box.destw }}
+                      {{ $t(box.destw) }}
                     </p>
                   </div>
                 </div>
@@ -48,10 +48,10 @@
 
           <div class="text-co">
             <div class="box-text text-end">
-              <h1>أهم مميزات التعاون <br />مع سبايدر-تك</h1>
+              <h1 v-html="$t('message.coop')"></h1>
             </div>
             <div class="requst mb-3 mt-3 text-end">
-              <button class="btn">اطلب خدمة الان</button>
+              <button class="btn">{{ $t("message.requestService") }}</button>
             </div>
           </div>
         </div>
@@ -74,21 +74,19 @@ export default {
           us: 1,
           img: img1,
           imgtw: img3,
-          text: "عقد مسجل",
-          des: "نقدم عقودًا مسجلة موقعة من الطرفين ، مما يضمن اتفاقية ملزمة قانونًا تحمي مصالح الطرفين.",
-          destw:
-            "نحن متواجدون دائمًا لمساعدتك وضمان سير مشاريعك بسلاسة في جميع الأوقات.",
-          text2: "دعم فني 24/7",
+          text: "boxs.1",
+          des: "boxs.2",
+          destw: "boxs.3",
+          text2: "boxs.4",
         },
         {
           us: 2,
           img: img2,
           imgtw: img4,
-          text: "حماية قوية",
-          des: "نستخدم أحدث ممارسات الأمن السيبراني ، مما يضمن بقاء مشروعك آمنًا وسريًا",
-          destw:
-            "تقديم حلول مبتكرة ومصممة خصيصًا تلبي احتياجات عملك الفريدة تمامًا",
-          text2: "حلول مبتكرة",
+          text: "boxs.5",
+          des: "boxs.6",
+          destw: "boxs.7",
+          text2: "boxs.8",
         },
       ],
     };
@@ -113,7 +111,7 @@ export default {
   background-color: transparent;
   text-decoration: none;
   overflow: hidden;
-  width: 130px;
+  width: 182px;
   padding: 9px;
   border-radius: 6px;
   z-index: 1;
