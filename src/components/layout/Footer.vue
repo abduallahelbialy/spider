@@ -5,29 +5,29 @@
         <div class="d-flex justify-content-between phone">
           <div class="col-lg-4 col-md-6">
             <div class="conatct-links">
-              <h1 class="d-flex justify-content-center">{{ $t("message.contact") }}</h1>
+              <h1 class="d-flex justify-content-center">اتصل بنا</h1>
               <ul class="d-flex flex-column align-items-center">
                 <li class="d-flex gap-2 align-items-center">
-                  {{ $t("message.number") }}
+                  رقم الهاتف : 966542366517
                   <i class="pi pi-chevron-circle-left"></i>
                 </li>
                 <li class="d-flex gap-2 align-items-center">
-                  {{ $t("message.mail") }}
+                  support@spider-te8.com البريد
                   <i class="pi pi-chevron-circle-left"></i>
                 </li>
                 <li class="d-flex gap-1 align-items-cenert text-end">
-                 {{ $t("message.address") }}
+                  عنوان مصر : الدقهلية ,طلخا - شارع فرينش بيكر - برج السمنودى
+                  الدور 3
                   <i class="pi pi-chevron-circle-left"></i>
                 </li>
                 <li class="d-flex gap-2 align-items-center text-end">
-                  {{ $t("message.addresst") }}
-                 <i
+                  عنوان مصر : التجمع الخامس - شارع التسعين الشمالي - ميدان
+                  تريفيوم - مكتب 440 - الدور الرابع<i
                     class="pi pi-chevron-circle-left"
                   ></i>
                 </li>
                 <li class="d-flex gap-2 align-items-center">
-                  {{ $t("message.soon") }}
-                 <i
+                  عنوان السعودية : الرياض (قريباً)<i
                     class="pi pi-chevron-circle-left"
                   ></i>
                 </li>
@@ -36,43 +36,36 @@
           </div>
           <div class="col-lg-2 col-md-6">
             <div class="conatct-links">
-              <h1 class="d-flex justify-content-center">{{ $t("message.time") }}</h1>
+              <h1 class="d-flex justify-content-end">اوقات العمل</h1>
               <ul class="d-flex flex-column align-items-end">
                 <li class="d-flex gap-2 align-items-center">
-                  {{ $t("message.fromt") }}
-                 <i class="pi pi-clock"></i>
+                  من 9 صباحا حتى 5 مساء <i class="pi pi-clock"></i>
                 </li>
                 <li class="d-flex gap-2 align-items-center">
-                  {{ $t("message.sund")}}
-                 <i class="pi pi-sun"></i>
+                  من الاحد الى الخميس <i class="pi pi-sun"></i>
                 </li>
                 <li class="d-flex gap-2 align-items-center">
-                  {{ $t("message.closed")}}
-                <i class="pi pi-calendar"></i>
+                  مغلق جمعة و سبت <i class="pi pi-calendar"></i>
                 </li>
               </ul>
             </div>
           </div>
           <div class="col-lg-2 col-md-6">
             <div class="conatct-links">
-              <h1 class="d-flex justify-content-center">{{ $t("message.spa") }}</h1>
+              <h1 class="d-flex justify-content-end">سبايدر-تك</h1>
 
               <ul class="d-flex flex-column align-items-end">
                 <li class="d-flex gap-2 align-items-center">
-                  {{ $t("linkss.1") }}
-                  <i class="pi pi- pi-arrow-circle-left"></i>
+                  الرئيسية<i class="pi pi- pi-arrow-circle-left"></i>
                 </li>
                 <li class="d-flex gap-2 align-items-center">
-                   {{ $t("linkss.2") }}
-                  <i class="pi pi- pi-arrow-circle-left"></i>
+                  خدماتنا<i class="pi pi- pi-arrow-circle-left"></i>
                 </li>
                 <li class="d-flex gap-2 align-items-center">
-                   {{ $t("linkss.6") }}
-                  <i class="pi pi- pi-arrow-circle-left"></i>
+                  المدونة<i class="pi pi- pi-arrow-circle-left"></i>
                 </li>
                 <li class="d-flex gap-2 align-items-center">
-                   {{ $t("linkss.4") }}
-                  <i class="pi pi- pi-arrow-circle-left"></i>
+                  اعمالنا<i class="pi pi- pi-arrow-circle-left"></i>
                 </li>
               </ul>
             </div>
@@ -84,12 +77,14 @@
               </div>
               <div class="text-logo text-end mt-3 pt-3">
                 <p>
-                {{ $t("message.apps") }}
+                  نحن دليلك فى رحلة التحول الرقمي , عالم من الابداع فى مجال
+                  البرمجيات و تصميم المواقع الاكترونية و المتاجر الالكترنية و
+                  تطبيقات الهاتف
                 </p>
               </div>
               <div class="notfa d-flex justify-content-end gap-1">
                 <p class="text-end">
-                  {{ $t("message.alaw") }}
+                  استمر في التحديث - احصل على تحديثات مع أحدث الموضوعات.
                 </p>
                 <i class="pi pi-bell-slash"></i>
               </div>
@@ -97,11 +92,11 @@
                 <input
                   type="email"
                   name=""
-                  :placeholder="$t('message.plas')"
+                  placeholder="ادخل البريد الالكترونى"
                   id=""
                 />
                 <div class="btn" :style="positiona">
-                  <button>{{ $t("message.sub") }}</button>
+                  <button>اشتراك</button>
                 </div>
               </div>
             </div>
@@ -114,7 +109,7 @@
       class="d-flex justify-content-around flex-wrap-reverse  align-items-center pt-3 "
     >
       <div class="dw">
-        <span v-html="$t('message.copy')"></span>
+        <span>حقوق النشر © 2024 سبايدر-تك | تم بواسطة سبايدر-تك</span>
       </div>
       <div class="all d-flex gap-3 align-items-center">
 
@@ -140,11 +135,11 @@
 
 <script>
 export default {
-
+ name:"Footer",
  computed:{
    positiona() {
       return this.$i18n.locale === "ar"
-        ? { left: "66%" } //en
+        ? { left: "70%" } //en
         : {  left: "10px" }; ///ar
     },
  }
@@ -190,7 +185,7 @@ li {
   height: 30px;
   border-radius: 50%;
   background-color: #fff;
-  padding: 5px;
+  padding: 4px;
     color: var(--main-color);
   transition: 0.3s;
 }
@@ -228,10 +223,9 @@ li {
   border: none;
   color: #fff;
   outline: none;
-  width: 70px;
 }
 .sub input {
-  width: 286px;
+  width: 254px;
   padding: 14px;
   border-radius: 4px;
   outline: none;
