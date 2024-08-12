@@ -5,10 +5,12 @@
         <div class="d-flex justify-content-between phone">
           <div class="col-lg-4 col-md-6">
             <div class="conatct-links">
-              <h1 class="d-flex justify-content-center">اتصل بنا</h1>
+              <h1 class="d-flex justify-content-center">
+                {{ $t("message.contact") }}
+              </h1>
               <ul class="d-flex flex-column align-items-center">
                 <li class="d-flex gap-2 align-items-center">
-                  رقم الهاتف : 966542366517
+                  {{ $t("message.number") }}
                   <i class="pi pi-chevron-circle-left"></i>
                 </li>
                 <li class="d-flex gap-2 align-items-center">
@@ -106,28 +108,27 @@
     </div>
     <div class="bord"></div>
     <div
-      class="d-flex justify-content-around flex-wrap-reverse  align-items-center pt-3 "
+      class="d-flex justify-content-around flex-wrap-reverse align-items-center pt-3"
     >
       <div class="dw">
         <span>حقوق النشر © 2024 سبايدر-تك | تم بواسطة سبايدر-تك</span>
       </div>
       <div class="all d-flex gap-3 align-items-center">
-
-      <div class="iconss ">
-        <i class="pi pi-facebook"></i>
-      </div>
-      <div class="iconss">
-        <i class="pi pi-instagram"></i>
-      </div>
-      <div class="iconss  ">
-        <i class="pi pi-linkedin"></i>
-      </div>
-      <div class="iconss ">
-        <i class="pi pi-twitter"></i>
-      </div>
-      <div class="iconss ">
-        <i class="pi pi-whatsapp"></i>
-      </div>
+        <div class="iconss">
+          <i class="pi pi-facebook"></i>
+        </div>
+        <div class="iconss">
+          <i class="pi pi-instagram"></i>
+        </div>
+        <div class="iconss">
+          <i class="pi pi-linkedin"></i>
+        </div>
+        <div class="iconss">
+          <i class="pi pi-twitter"></i>
+        </div>
+        <div class="iconss">
+          <i class="pi pi-whatsapp"></i>
+        </div>
       </div>
     </div>
   </div>
@@ -135,14 +136,14 @@
 
 <script>
 export default {
- name:"Footer",
- computed:{
-   positiona() {
+  name: "Footer",
+  computed: {
+    positiona() {
       return this.$i18n.locale === "ar"
         ? { left: "70%" } //en
-        : {  left: "10px" }; ///ar
+        : { left: "10px" }; ///ar
     },
- }
+  },
 };
 </script>
 
@@ -186,19 +187,18 @@ li {
   border-radius: 50%;
   background-color: #fff;
   padding: 4px;
-    color: var(--main-color);
+  color: var(--main-color);
   transition: 0.3s;
 }
-.iconss:hover{
-    background-color: red;
-    color: #fff;
+.iconss:hover {
+  background-color: red;
+  color: #fff;
 }
 .iconss i {
   display: flex;
   justify-items: center;
   align-items: center;
   font-size: 20px;
-
 }
 .notfa p {
   font-size: 11px;
@@ -251,14 +251,14 @@ li {
   }
   .sub .btn {
     position: absolute;
-    left: 50px;
+    left: 54px;
     top: 6px;
     background-color: var(--red-color);
   }
-  .iconss{
+  .iconss {
     margin: 14px 0;
   }
-  .dw{
+  .dw {
     margin: 10px 0;
   }
 }
