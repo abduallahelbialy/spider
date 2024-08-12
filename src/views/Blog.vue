@@ -70,7 +70,7 @@ export default {
       slidesPerView: 1,
       modules: [FreeMode, Autoplay],
       autoplay: {
-        delay: 2000,
+        delay: 2500,
         disableOnInteraction: false,
       },
       sliders: [

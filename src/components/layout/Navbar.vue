@@ -2,9 +2,17 @@
    <nav class="navbar navbar-expand-lg sticky-top">
       <div class="container">
         <div class=" ">
-          <button class="btn">{{ $t("message.contact") }}</button>
+          <button class="btn pcab">{{ $t("message.contact") }}</button>
         </div>
-
+ <router-link class="navbar-brand phoa" to="/">
+            <div class="logo">
+              <img
+                src="../../assets/logo_white.6b0b6d2.svg"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+          </router-link>
         <button
           class="navbar-toggler"
           type="button"
@@ -37,7 +45,7 @@
               </router-link>
             </li>
           </ul>
-          <router-link class="navbar-brand" to="/">
+          <router-link class="navbar-brand barntwo" to="/">
             <div class="logo">
               <img
                 src="../../assets/logo_white.6b0b6d2.svg"
@@ -46,6 +54,9 @@
               />
             </div>
           </router-link>
+           <div class=" ">
+          <button class="btn pcabs">{{ $t("message.contact") }}</button>
+        </div>
         </div>
       </div>
     </nav>
@@ -59,7 +70,6 @@ name:"navbar",
 data() {
     return {
             currentPath: window.location.pathname,
-
       canvasWidth: window.innerWidth,
       canvasHeight: window.innerHeight,
       points: [],
@@ -70,10 +80,10 @@ data() {
       mouseY: null,
       Links: [
         { id: 5, link: "linkss.6", path: "/blognbm" },
-        { id: 5, link: "linkss.5", path: "/store" },
-        { id: 4, link: "linkss.4", path: "/works" },
-        { id: 3, link: "linkss.3", path: "/about" },
-        { id: 2, link: "linkss.2", path: "/service" },
+        { id: 5, link: "linkss.5", path: "/storea" },
+        { id: 4, link: "linkss.4", path: "/worksa" },
+        { id: 3, link: "linkss.3", path: "/abouta" },
+        { id: 2, link: "linkss.2", path: "/servicea" },
         { id: 1, link: "linkss.1", path: "/" },
       ],
     };
@@ -159,6 +169,9 @@ data() {
 .logo {
   max-width: 130px;
 }
+.pcabs{
+  display: none !important;
+}
 
 .btn {
   display: inline-block;
@@ -193,6 +206,9 @@ data() {
   transition: all 0.3s;
   z-index: -1;
 }
+.phoa{
+  display: none;
+}
 
 .btn:hover::before {
   transform: translateX(100%);
@@ -207,5 +223,17 @@ data() {
   .btn {
     margin: 10px 0;
   }
+  .phoa{
+  display: block;
+}
+.pcab{
+  display: none;
+}
+.barntwo{
+  display: none;
+}
+.pcabs{
+  display: block !important;
+}
 }
 </style>

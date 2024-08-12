@@ -95,7 +95,7 @@
                   placeholder="ادخل البريد الالكترونى"
                   id=""
                 />
-                <div class="btn">
+                <div class="btn" :style="positiona">
                   <button>اشتراك</button>
                 </div>
               </div>
@@ -134,7 +134,16 @@
 </template>
 
 <script>
-export default {};
+export default {
+ name:"Footer",
+ computed:{
+   positiona() {
+      return this.$i18n.locale === "ar"
+        ? { left: "70%" } //en
+        : {  left: "10px" }; ///ar
+    },
+ }
+};
 </script>
 
 <style scoped>
@@ -242,7 +251,7 @@ li {
   }
   .sub .btn {
     position: absolute;
-    left: 52px;
+    left: 50px;
     top: 6px;
     background-color: var(--red-color);
   }

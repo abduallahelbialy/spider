@@ -64,7 +64,7 @@ export default {
       slidesPerView: 3,
       modules: [FreeMode, Autoplay],
       autoplay: {
-        delay: 2000,
+        delay: 2600,
         disableOnInteraction: false,
       },
        members: [

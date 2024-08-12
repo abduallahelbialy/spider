@@ -115,7 +115,7 @@ data() {
       slidesPerView: 2,
       modules: [FreeMode, Autoplay],
       autoplay: {
-        delay: 2500,
+        delay: 2400,
         disableOnInteraction: false,
       },
     };

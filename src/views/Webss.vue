@@ -133,7 +133,7 @@ export default {
       slidesPerView: 2,
       modules: [FreeMode, Autoplay],
       autoplay: {
-        delay: 1000,
+        delay: 2800,
         disableOnInteraction: false,
       },
     };

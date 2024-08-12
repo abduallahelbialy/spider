@@ -1,4 +1,6 @@
 import './assets/main.css'
+import './assets/rtl.css';
+import './assets/ltr.css';
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import PrimeVue from "primevue/config";
@@ -14,8 +16,8 @@ import ar from "../src/components/local/ar.json";
 const i18n = createI18n({
   locale: "en", // اللغة الافتراضية
   messages: {
-    ar,
     en,
+    ar,
   },
 });
 
