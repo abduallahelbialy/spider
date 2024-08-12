@@ -289,7 +289,7 @@ export default {
 }
 .animation-two {
   top: -5%;
-  right: 80%;
+  right: 78%;
   animation: move-right-right 5s linear infinite;
 }
 
