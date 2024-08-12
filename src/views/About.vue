@@ -289,7 +289,7 @@ export default {
 }
 .animation-two {
   top: -5%;
-  right: 78%;
+  right: 80%;
   animation: move-right-right 5s linear infinite;
 }
 
@@ -394,6 +394,9 @@ export default {
   .info-descrption {
     font-size: 11px;
     line-height: 2;
+  }
+  .animation-two{
+    display: none;
   }
 
   /* ////anamition// */
