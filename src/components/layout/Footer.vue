@@ -43,11 +43,11 @@
                  <i class="pi pi-clock"></i>
                 </li>
                 <li class="d-flex gap-2 align-items-center">
-                  {{ $t("message.sund ")}}
+                  {{ $t("message.sund")}}
                  <i class="pi pi-sun"></i>
                 </li>
                 <li class="d-flex gap-2 align-items-center">
-                  {{ $t("message.closed ")}}
+                  {{ $t("message.closed")}}
                 <i class="pi pi-calendar"></i>
                 </li>
               </ul>
@@ -140,7 +140,7 @@
 
 <script>
 export default {
- name:"Footer",
+
  computed:{
    positiona() {
       return this.$i18n.locale === "ar"
