@@ -11,3 +11,11 @@
     justify-content: flex-start !important; /* محتوى اللفاف يبدأ من اليسار */
     /* يمكن إضافة خواص إضافية هنا إذا كانت هناك حاجة */
 }
+.sub input::placeholder {
+  text-align: end !important;
+}
+@media (max-width:477px) {
+  .sub input::placeholder {
+  text-align: end !important;
+}  
+}

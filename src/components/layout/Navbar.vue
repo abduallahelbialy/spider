@@ -1,66 +1,87 @@
 <template>
-   <nav class="navbar navbar-expand-lg sticky-top">
-      <div class="container">
-        <div class=" ">
-          <button class="btn pcab">{{ $t("message.contact") }}</button>
+  <!-- Start of the navigation bar -->
+  <nav :class="['navbar', 'navbar-expand-lg', 'sticky-top', { 'scrolled': isScrolled }]">
+    
+    <!-- Main container for the navbar content -->
+    <div class="container">
+
+      <!-- Contact button on the left -->
+      <div class=" ">
+        <button class="btn pcab">{{ $t("message.contact") }}</button>
+      </div>
+
+      <!-- Website logo and link to the homepage -->
+      <router-link class="navbar-brand phoa" to="/">
+        <div class="logo">
+          <img
+            src="../../assets/logo_white.6b0b6d2.svg"
+            alt=""
+            class="img-fluid"
+          />
         </div>
- <router-link class="navbar-brand phoa" to="/">
-            <div class="logo">
-              <img
-                src="../../assets/logo_white.6b0b6d2.svg"
-                alt=""
-                class="img-fluid"
-              />
-            </div>
-          </router-link>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse"
-          id="navbarSupportedContent"
-          ref="navbarContent"
-        >
-          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-            <div class="d-flex mx-3 align-items-center cvar2">
-              <img :src="languageIcon" @click="changeLanguage" alt="" />
-            </div>
-            <li class="nav-item" v-for="link in Links" :key="link.id">
-              <router-link
-                :class="{
-                  'nav-link': true,
-                  'active fw-medium': $route.path === link.path,
-                }"
-                :to="link.path"
-              >
-                {{ $t(link.link) }}
-              </router-link>
-            </li>
-          </ul>
-          <router-link class="navbar-brand barntwo" to="/">
-            <div class="logo">
-              <img
-                src="../../assets/logo_white.6b0b6d2.svg"
-                alt=""
-                class="img-fluid"
-              />
-            </div>
-          </router-link>
-           <div class=" ">
+      </router-link>
+
+      <!-- Toggler button for collapsing and expanding the navbar on small screens -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Main navigation links in the navbar -->
+      <div
+        class="collapse navbar-collapse"
+        id="navbarSupportedContent"
+        ref="navbarContent"
+      >
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          
+          <!-- Language switcher icon -->
+          <div class="d-flex mx-3 align-items-center cvar2">
+            <img :src="languageIcon" @click="changeLanguage" alt="" />
+          </div>
+
+          <!-- Repeated navigation links -->
+          <li class="nav-item" v-for="link in Links" :key="link.id">
+            <router-link
+              :class="{
+                'nav-link': true,
+                'active fw-medium': $route.path === link.path,
+              }"
+              :to="link.path"
+            >
+              {{ $t(link.link) }}
+            </router-link>
+          </li>
+        </ul>
+
+        <!-- Second website logo and link to the homepage (displayed on larger screens) -->
+        <router-link class="navbar-brand barntwo" to="/">
+          <div class="logo">
+            <img
+              src="../../assets/logo_white.6b0b6d2.svg"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+        </router-link>
+
+        <!-- Contact button on the right -->
+        <div class=" ">
           <button class="btn pcabs">{{ $t("message.contact") }}</button>
         </div>
-        </div>
       </div>
-    </nav>
+    </div>
+  </nav>
+  <!-- End of the navigation bar -->
 </template>
+
 
 <script>
 import imglang from "../../assets/en.dc03478.png";
@@ -69,6 +90,8 @@ export default {
 name:"navbar",
 data() {
     return {
+            isScrolled: false,
+
             currentPath: window.location.pathname,
       canvasWidth: window.innerWidth,
       canvasHeight: window.innerHeight,
@@ -96,6 +119,9 @@ data() {
     },
   },
   methods: {
+    handleScroll() {
+      this.isScrolled = window.scrollY > 0;
+    },
     changeLanguage() {
       if (this.$i18n.locale === "en") {
         this.$i18n.locale = "ar";
@@ -128,11 +154,15 @@ data() {
 },
  mounted() {
    
-    window.addEventListener("click", this.handleClickOutside);
+    window.addEventListener("click", this.handleClickOutside  );
+    window.addEventListener('scroll', this.handleScroll);
   },
+  
   beforeUnmount() {
     window.removeEventListener("mousemove", this.updateMousePosition);
     window.removeEventListener("click", this.handleClickOutside);
+        window.removeEventListener('scroll', this.handleScroll);
+
   },
    created() {
     this.$watch(
@@ -149,7 +179,12 @@ data() {
 .navbar {
   background: var(--main-color) !important;
   backdrop-filter: blur(15px);
-  background-color: rgba(37, 0, 108, 0.8);
+    transition: background-color 0.3s ease;
+
+  /* background-color: rgba(37, 0, 108, 0.8); */
+}
+.navbar.scrolled {
+  background-color: rgba(37, 0, 108, 0.8) !important;
 }
 .navbar-nav a {
   color: #fff;
@@ -159,9 +194,31 @@ data() {
   font-size: 17px;
 }
 .active {
-  border-bottom: 2px solid red;
   color: red !important;
+  position: relative;
   width: fit-content;
+  font-weight: bold;
+}
+
+.active::before,
+.active::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  background-color: red;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.active::before {
+  bottom: -7px; 
+  width: 70%;
+}
+
+.active::after {
+  bottom: -10px; /* المسافة بين النص والخط الثاني */
+  width: 70%; /* عرض الخط الثاني */
 }
 .cvar2 {
   cursor: pointer;

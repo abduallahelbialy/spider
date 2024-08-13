@@ -2,7 +2,7 @@
   <div class="project">
     <div class="container">
       <div class="row">
-        <div class="title text-center mb-3">
+        <div class="title text-center mb-3" data-aos="fade-down">
           <h1>{{ $t("message.aproj") }}</h1>
           <h2>{{ $t("message.website") }}</h2>
         </div>
@@ -13,7 +13,7 @@
           :modules="modules"
           :autoplay="autoplay"
           :loop="true"
-          class="mySwiper mt-3 mb-3"
+          class="mySwiper mt-3 mb-3" 
         >
           <swiper-slide>
             <div class="content-img">

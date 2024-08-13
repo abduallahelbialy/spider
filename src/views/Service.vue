@@ -1,5 +1,5 @@
 <template>
-  <div class="service">
+  <div class="service" data-aos="fade-down">
     <div class="container">
       <div class="row">
         <div class="title text-center pt-3 mb-3">

@@ -6,7 +6,7 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="repeated-text">
+        <div class="repeated-text" data-aos="fade-down">
           <div class="text-center">
             <div class="title mb-3">
               <h2>{{ $t("message.spider") }}</h2>
@@ -51,6 +51,7 @@ export default {
 .title h2 {
   font-size: 38px;
   line-height: 2;
+  font-weight: 600;
 }
 .title h2::selection {
   background-color: red;

@@ -2,10 +2,10 @@
   <div class="our-works">
     <div class="container">
       <div class="row">
-        <div class="title text-center mb-3">
+        <div class="title text-center mb-3" data-aos="fade-down">
           <h1>{{ $t("message.ourworks") }}</h1>
         </div>
-        <div class="d-flex justify-content-center gap-3 flex-wrap-reverse mt-4">
+        <div class="d-flex justify-content-center gap-3 flex-wrap-reverse mt-4" data-aos="fade-down">
           <div
             class="info-btn"
             @click="activeTap = '3'"
@@ -32,13 +32,13 @@
           </div>
         </div>
         <div
-          class="content d-flex justify-content-center align-items-center mt-4"
+          class="content d-flex justify-content-center align-items-center mt-4" data-aos="fade-down"
         >
          <Tapone v-if="activeTap === '1'"/>
          <Taptwo v-if="activeTap === '2'"/>
          <Tapthree v-if="activeTap === '3'"/>
         </div>
-        <div class="view d-flex justify-content-center mt-3 align-items-center">
+        <div class="view d-flex justify-content-center mt-3 align-items-center" >
           <button>{{ $t("message.viewall") }}</button>
         </div>
       </div>

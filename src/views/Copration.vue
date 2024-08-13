@@ -5,8 +5,8 @@
         <div
           class="d-flex justify-content-around align-items-center flex-wrap-reverse"
         >
-          <div class="d-flex flex-column align-items-center">
-            <div class="box-icons d-flex gap-4 flex-wrap">
+          <div class="d-flex flex-column align-items-center" data-aos="fade-down">
+            <div class="box-icons d-flex gap-4 flex-wrap" >
               <div class="box-content m-auto" v-for="box in boxs" :key="box.us">
                 <div
                   class="text-box d-flex justify-content-end align-items-end flex-column"
@@ -46,7 +46,7 @@
             </div>
           </div>
 
-          <div class="text-co">
+          <div class="text-co" data-aos="fade-down">
             <div class="box-text text-end">
               <h1 v-html="$t('message.coop')"></h1>
             </div>

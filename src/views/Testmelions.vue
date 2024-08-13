@@ -2,7 +2,7 @@
   <div class="testmelion">
     <div class="container">
       <div class="row">
-        <div class="title text-center mb-3">
+        <div class="title text-center mb-3" data-aos="fade-down">
           <h1>{{ $t("message.more") }}</h1>
         </div>
         <div class="test-sli mt-5">

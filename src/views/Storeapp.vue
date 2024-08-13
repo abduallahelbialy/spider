@@ -5,10 +5,10 @@
         <div
           class="d-flex justify-content-around align-items-center flex-wrap-reverse"
         >
-        <div class="img-box">
+        <div class="img-box" data-aos="fade-down">
             <img src="../assets/store.png" alt="">
           </div>
-          <div class="text-box d-flex justify-content-end flex-column  align-items-end">
+          <div class="text-box d-flex justify-content-end flex-column  align-items-end" data-aos="fade-down">
             <h1 class=" text-end" v-html="$t('message.story')"></h1>
             <ul class=" d-flex justify-content-end flex-column  align-items-end">
               <p class=" fw-semibold">{{ $t("message.Features") }}</p>

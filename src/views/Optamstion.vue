@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="d-flex justify-content-around align-items-center flex-wrap-reverse  ">
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-aos="fade-down">
             <div class="icons mb-4 d-flex justify-content-around flex-wrap gap-3">
               <div
                 class="d-flex flex-column align-items-center gap-3 info"
@@ -24,7 +24,7 @@
               
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-aos="fade-down">
             <div class="text-op d-flex flex-column align-items-end">
               <p class="">{{ $t("message.opp") }}</p>
               <h1>{{ $t("message.privateSector") }}</h1>

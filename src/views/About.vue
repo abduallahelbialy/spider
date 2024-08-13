@@ -1,51 +1,71 @@
 <template>
+  <!-- Start of the About section -->
   <div class="about">
+    
+    <!-- Main container for the About section content -->
     <div class="container">
+      
+      <!-- Row for arranging content -->
       <div class="row">
-        <div
-          class="d-flex justify-content-around align-items-center flex-wrap-reverse"
-        >
-          <div class="animation col-12 col-md-6 mt-3">
+        
+        <!-- Flex container for animations and text, with reverse wrap on small screens -->
+        <div class="d-flex justify-content-around align-items-center flex-wrap-reverse">
+          
+          <!-- Column for animation with AOS (Animate On Scroll) effect -->
+          <div class="animation col-12 col-md-6 mt-3" data-aos="fade-down">
+            
+            <!-- Container for the animation image -->
             <div class="info-anmy">
               <img src="../assets/icons_path.1c7feb2.svg" alt="" />
             </div>
+            
+            <!-- Container for animated images -->
             <div class="animation-imgs">
+              
+              <!-- Individual animated image with position style applied -->
               <div
                 :style="positionStyleone"
                 class="animation-one position-absolute"
               >
                 <img src="../assets/an1.svg" alt="" class="one" />
               </div>
+              
+              <!-- Additional animated images with position styles applied -->
               <div
                 :style="positionStyle"
                 class="animation-two position-absolute"
               >
                 <img src="../assets/an2.svg" alt="" class="two" />
               </div>
+              
               <div
                 :style="positionStylethree"
                 class="animation-three position-absolute"
               >
                 <img src="../assets/an3.svg" alt="" class="three" />
               </div>
+              
               <div
                 :style="positionStylefour"
                 class="animation-four position-absolute"
               >
                 <img src="../assets/zom.svg" alt="" class="four" />
               </div>
+              
               <div
                 :style="positionStylefive"
                 class="animation-five position-absolute"
               >
                 <img src="../assets/an4.svg" alt="" class="five" />
               </div>
+              
               <div
                 :style="positionStylesix"
                 class="animation-six position-absolute"
               >
                 <img src="../assets/an5.svg" alt="" class="six" />
               </div>
+              
               <div
                 :style="positionStyleseven"
                 class="animation-seven position-absolute"
@@ -54,18 +74,22 @@
               </div>
             </div>
           </div>
-          <div class="text col-12 col-md-6 ">
-            <div class="info-text text-end">
+          
+          <!-- Column for text content with AOS effect -->
+          <div class="text col-12 col-md-6">
+            <div class="info-text text-end" data-aos="fade-down">
               <h1>{{ $t("message.about-spider") }}</h1>
             </div>
+            
+            <!-- Description text -->
             <div class="info-descrption text-end">
               <p>
                 {{ $t("message.desinformation") }}
               </p>
             </div>
-            <div
-              class="buntr d-flex gap-3 justify-content-end align-items-end flex-wrap"
-            >
+            
+            <!-- Buttons below the description text -->
+            <div class="buntr d-flex gap-3 justify-content-end align-items-end flex-wrap">
               <button class="btn2">{{ $t("message.down") }}</button>
               <button class="btn">{{ $t("message.information") }}</button>
             </div>
@@ -74,14 +98,26 @@
       </div>
     </div>
   </div>
-  <div class="parent position-relative m-auto">
-    <div class="d-flex justify-content-around   align-items-center flex-wrap fs ">
-      <div  class="" v-for="box in boxs" :key="box.id">
-        <div class="phona d-flex gap-3 align-items-center " >
-          <div class="text-box d-flex flex-column align-items-center ">
+
+  <!-- Additional content section with animated boxes -->
+  <div class="parent position-relative m-auto" data-aos="fade-down">
+    
+    <!-- Flex container for boxes -->
+    <div class="d-flex justify-content-around align-items-center flex-wrap fs">
+      
+      <!-- Repeated box content for each item in the 'boxs' array -->
+      <div class="" v-for="box in boxs" :key="box.id">
+        
+        <!-- Content of each box including text and image -->
+        <div class="phona d-flex gap-3 align-items-center">
+          
+          <!-- Text box displaying the number and description -->
+          <div class="text-box d-flex flex-column align-items-center">
             <span>{{ box.num }}</span>
-            <p>{{$t(box.text)  }}</p>
+            <p>{{ $t(box.text) }}</p>
           </div>
+          
+          <!-- Image associated with the box -->
           <div class="img-box">
             <img :src="box.img" alt="" />
           </div>
@@ -90,6 +126,7 @@
     </div>
   </div>
 </template>
+
 
 <script>
 import img1 from "../assets/pro1.png";

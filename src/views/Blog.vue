@@ -2,11 +2,11 @@
   <div class="blog">
     <div class="container">
       <div class="row">
-        <div class="title text-center mb-3">
+        <div class="title text-center mb-3" data-aos="fade-down">
           <h1>{{$t("message.blog")}}</h1>
           <h2>{{ $t("message.desigs") }}</h2>
         </div>
-        <div class="d-flex justify-content-evenly align-items-center flex-wrap">
+        <div class="d-flex justify-content-evenly align-items-center flex-wrap" data-aos="fade-down">
           <swiper
             :slidesPerView="slidesPerView"
             :spaceBetween="30"

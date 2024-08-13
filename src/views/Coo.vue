@@ -2,10 +2,10 @@
   <div class="coo">
     <div class="container">
       <div class="row">
-        <div class="title text-center">
+        <div class="title text-center" data-aos="fade-down">
           <h1>{{ $t("message.Directors") }}</h1>
         </div>
-        <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center" data-aos="fade-down">
          <swiper
     :slidesPerView="slidesPerView"
     :spaceBetween="30"
