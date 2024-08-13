@@ -86,7 +86,7 @@
               </div>
               <div class="notfa d-flex justify-content-end gap-1">
                 <p class="text-end">
-                  استمر في التحديث - احصل على تحديثات مع أحدث الموضوعات.
+                  استمر في التحديث - احصل على تحديثات مع أحدث الموضوعات
                 </p>
                 <i class="pi pi-bell-slash"></i>
               </div>
